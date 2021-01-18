@@ -2,9 +2,11 @@
 использовать Клавиатура
 цел w, h, ball, начало, time
 цел ballx, bally, speedx, speedy
-цел playery, enemyy
+цел playery, playerspeed, enemyy, enemyspeed
 цел очко_игрока, очко_врага
 сканкод клавиша
+playerspeed:=10
+enemyspeed:=5
 time:=30
 начало:=1
 w:= 900
@@ -79,9 +81,9 @@ speedy:=-speedy
 клавиша:= код клав
 выбор
 при клавиша = КЛ_ВВЕРХ и playery-40-10 >= 0:
-playery:=playery-10
+playery:=playery-playerspeed
 при клавиша = КЛ_ВНИЗ и playery+40+10 <= высота листа:
-playery:=playery+10
+playery:=playery+playerspeed
 все
 все
 если 7 < ballx-ball < 20 и playery-40 < bally < playery+40 то
@@ -92,9 +94,9 @@ speedx:=-speedx
 нач
 выбор
 при enemyy < bally и enemyy+40+10 <= высота листа:
-enemyy:=enemyy+10
+enemyy:=enemyy+enemyspeed
 при enemyy > bally и enemyy-10-40 >= 0:
-enemyy:=enemyy-10
+enemyy:=enemyy-enemyspeed
 все
 если ширина листа - 20 < ballx+ball < ширина листа - 7 и enemyy-40 < bally < enemyy+40 то
 speedx:=-speedx
@@ -125,3 +127,4 @@ enemyy:=центр y
 спавн_мяча
 все
 кон
+
