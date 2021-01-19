@@ -12,4 +12,4 @@ speedx, speedy - скорость мячика по осям x, y за игро�
 ### Приятной игры!
 # UPD: QR code игры!
 Благодаря нехитрым действиям мне получилось ждать игру до размера меньше 2КБ и уместить в QR code:
-![](https://github.com/gdeMojChay/KUMIR-PING-PONG/blob/main/img/qr-code.gif)
+![](https://github.com/gdeMojChay/KUMIR-PING-PONG/blob/main/img/qrcode.png)
